@@ -1,4 +1,4 @@
-module github.com/nermolaev/traefik-plugin-request-id-short
+module github.com/nermolaev/traefik-request-id-short
 
 go 1.21
 
