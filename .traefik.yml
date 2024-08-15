@@ -1,7 +1,7 @@
-displayName: X-Request-ID
+displayName: Request-ID-short
 type: middleware
-import: github.com/mdklapwijk/traefik-plugin-request-id
-summary: Injects X-Request-ID header with a UUIDv4 value into HTTP requests and responses.
+import: github.com/nermolaev/traefik-plugin-request-id-short
+summary: Injects Request-ID header with a UUIDv4 value (without dashes) into HTTP requests and responses.
 testData:
   HeaderName: "X-Request-ID"
   Enabled: true
