@@ -1,4 +1,4 @@
-package traefik_plugin_request_id_short
+package traefik_request_id_short
 
 import (
 	"context"

@@ -1,5 +1,5 @@
-// Package traefik_plugin_request_id_short a Traefik plugin to add request ID to incoming HTTP requests.
-package traefik_plugin_request_id_short
+// Package traefik_request_id_short a Traefik plugin to add request ID to incoming HTTP requests.
+package traefik_request_id_short
 
 import (
   "context"
@@ -23,7 +23,7 @@ func CreateConfig() *Config {
   }
 }
 
-func New(ctx context.Context, next http.Handler, config *Config, _ string) (http.Handler, error) {
+func New(ctx context.Context, next http.Handler, config *Config, name string) (http.Handler, error) {
   return http.HandlerFunc(func(writer http.ResponseWriter, request *http.Request) {
     if config.Enabled {
       existingID := request.Header.Get(config.HeaderName)
